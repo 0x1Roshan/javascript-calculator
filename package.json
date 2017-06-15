@@ -17,8 +17,4 @@
     "url": "https://github.com/meroshan/javascript-calculator/issues"
   },
   "homepage": "https://github.com/meroshan/javascript-calculator#readme",
-  "dependencies": {
-    "bootstrap": "^3.3",
-    "vue": "^2.3"
-  }
 }

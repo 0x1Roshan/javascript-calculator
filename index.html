@@ -1,91 +1,45 @@
 <html>
 	<head>
 		<title>Simple Calculator</title>
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<link rel="stylesheet" href="resources/css/app.css" />
 	</head>
 	<body>
-        <div class="container">
-            <div class="jumbotron">
-                <h2>Simple Calculator</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-4">
-                        <form role="form" class="form-inline">
-    						<div class="row">
-								<input type="text" class="form-control col-md-8" id="display" />
-							</div>
-							<div class="row">
-								<div class="col-md-1">
-									<button type="button" id="ac">AC</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="ce">CE</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="div" value="/">&divide;</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="mul" value="*">*</button>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-1">
-									<button type="button" id="seven" value="7">7</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="eight" value="8">8</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="nine" value="9">9</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="min" value"-">-</button>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-1">
-									<button type="button" id="four" value="4">4</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="five" value="5">5</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="six" value="6">6</button>
-								</div>
-								<div class="col-md-1">
-									<button type="button" id="plus" value="+">+</button>
-								</div>
-							</div>
-					    </form>
-						<div class="row">
-							<div class="col-md-1">
-								<button type="button" id="one" value="1">1</button>
-							</div>
-							<div class="col-md-1">
-								<button type="button" id="two" value="2">2</button>
-							</div>
-							<div class="col-md-1">
-								<button type="button" id="three" value="3">3</button>
-							</div>
-							<div class="col-md-1">
-								<button type="button" id="equalTo">=</button>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-1">
-								<button type="button" id="zero" value="0">0</button>
-							</div>
-							<div class="col-md-1">
-								<button type="button" id="point">.</button>
-							</div>
-						</div>
-                    </div>
-                </div>
-            </div>
+        <div class="wrapper">
+        	<table border="0" cellspacing="0">
+				<tr>
+					<td colspan="4" id="inputEntry">0</td>
+				</tr>
+				<tr>
+					<td colspan="3"><button onclick="pushEntry(this)">AC</button></td>
+					<td><button onclick="pushEntry(this)">/</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="pushEntry(this)">7</button></td>
+					<td><button onclick="pushEntry(this)">8</button></td>
+					<td><button onclick="pushEntry(this)">9</button></td>
+					<td><button onclick="pushEntry(this)">*</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="pushEntry(this)">4</button></td>
+					<td><button onclick="pushEntry(this)">5</button></td>
+					<td><button onclick="pushEntry(this)">6</button></td>
+					<td><button onclick="pushEntry(this)">-</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="pushEntry(this)">1</button></td>
+					<td><button onclick="pushEntry(this)">2</button></td>
+					<td><button onclick="pushEntry(this)">3</button></td>
+					<td><button onclick="pushEntry(this)">+</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button onclick="pushEntry(this)">0</button></td>
+					<td><button onclick="pushEntry(this)">.</button></td>
+					<td><button onclick="pushEntry(this)">=</button></td>
+				</tr>
+			</table>
         </div>
-		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="node_modules/vue/dist/vue.min.js"></script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="resources/js/app.js"></script>
 	</body>
 </html>
