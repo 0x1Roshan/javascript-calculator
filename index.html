@@ -2,7 +2,6 @@
 	<head>
 		<title>Simple Calculator</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="resources/css/app.css" />
 	</head>
 	<body>
@@ -14,7 +13,7 @@
                     <div class="col-md-offset-2 col-md-4">
                         <form role="form" class="form-inline">
     						<div class="row">
-								<input type="text" class="form-control col-md-8" id="display" readonly="readonly" />
+								<input type="text" class="form-control col-md-8" id="display" />
 							</div>
 							<div class="row">
 								<div class="col-md-1">
@@ -24,10 +23,10 @@
 									<button type="button" id="ce">CE</button>
 								</div>
 								<div class="col-md-1">
-									<button type="button" id="div">&divide;</button>
+									<button type="button" id="div" value="/">&divide;</button>
 								</div>
 								<div class="col-md-1">
-									<button type="button" id="mul">*</button>
+									<button type="button" id="mul" value="*">*</button>
 								</div>
 							</div>
 							<div class="row">
@@ -41,7 +40,7 @@
 									<button type="button" id="nine" value="9">9</button>
 								</div>
 								<div class="col-md-1">
-									<button type="button" id="min">-</button>
+									<button type="button" id="min" value"-">-</button>
 								</div>
 							</div>
 							<div class="row">
@@ -55,7 +54,7 @@
 									<button type="button" id="six" value="6">6</button>
 								</div>
 								<div class="col-md-1">
-									<button type="button" id="plus">+</button>
+									<button type="button" id="plus" value="+">+</button>
 								</div>
 							</div>
 					    </form>
@@ -70,7 +69,7 @@
 								<button type="button" id="three" value="3">3</button>
 							</div>
 							<div class="col-md-1">
-								<button type="button" id="=">=</button>
+								<button type="button" id="equalTo">=</button>
 							</div>
 						</div>
 						<div class="row">
@@ -85,8 +84,8 @@
                 </div>
             </div>
         </div>
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="node_modules/vue/dist/vue.min.js"></script>
 		<script src="resources/js/app.js"></script>
 	</body>
 </html>
